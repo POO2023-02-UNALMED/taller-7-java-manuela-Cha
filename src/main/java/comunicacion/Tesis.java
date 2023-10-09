@@ -20,8 +20,12 @@ public class Tesis extends Escrito{
         return idea;
     }
 
-    public String[] getArgumentos(){
-        return argumentos;
+    public int getArgumentos(){
+        int contadorArgs = 0;
+        for (String arg : argumentos){
+            contadorArgs += 1;
+        }
+        return contadorArgs;
     }
 
     public String getConclusion(){
