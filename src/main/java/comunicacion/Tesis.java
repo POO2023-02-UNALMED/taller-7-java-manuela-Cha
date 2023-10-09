@@ -20,12 +20,8 @@ public class Tesis extends Escrito{
         return idea;
     }
 
-    public int getArgumentos(){
-        int contadorArgs = 0;
-        for (String arg : argumentos){
-            contadorArgs += 1;
-        }
-        return contadorArgs;
+    public String[] getArgumentos(){
+        return this.argumentos;
     }
 
     public String getConclusion(){
@@ -41,7 +37,7 @@ public class Tesis extends Escrito{
     }
 
     public String toString(){
-        return super.getOrigen() + "\n" + super.getTitulo() + "\n" + super.getAutor() + "\n" + super.getPaginas() + "\n" + this.getIdea() + "\n" + this.getArgumentos() + "\n" + this.getConclusion() + "\n" + this.getReferencias();
+        return super.getOrigen() + "\n" + super.getTitulo() + "\n" + super.getAutor() + "\n" + super.getPaginas() + "\n" + this.getIdea() + "\n" + this.getArgumentos().length + "\n" + this.getConclusion() + "\n" + this.getReferencias();
     }
 
     public int palabrasTotales(int palabrasPagina){
