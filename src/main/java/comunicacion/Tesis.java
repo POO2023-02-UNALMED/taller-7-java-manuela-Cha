@@ -32,7 +32,7 @@ public class Tesis extends Escrito{
         return referencias;
     }
 
-    String interpretacion(){
+    public String interpretacion(){
         return interpretacion;
     }
 
@@ -40,7 +40,7 @@ public class Tesis extends Escrito{
         return super.getOrigen() + "\n" + super.getTitulo() + "\n" + super.getAutor() + "\n" + super.getPaginas() + "\n" + this.getIdea() + "\n" + this.getArgumentos() + "\n" + this.getConclusion() + "\n" + this.getReferencias();
     }
 
-    int palabrasTotales(int palabrasPagina){
+    public int palabrasTotales(int palabrasPagina){
         int factor = 5;
         return palabrasPagina * factor * super.getPaginas();
     }
