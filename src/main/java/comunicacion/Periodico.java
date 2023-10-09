@@ -28,7 +28,7 @@ public class Periodico extends Escrito{
         return super.getOrigen() + "\n" + super.getTitulo() + "\n" + super.getAutor() + "\n" + super.getPaginas() + "\n" + this.getFecha() + "\n" + this.getPrimicia();
     }
 
-    int palabrasTotales(int palabrasPagina){
+    public int palabrasTotales(int palabrasPagina){
         int factor = 10;
         return palabrasPagina * factor * super.getPaginas();
     }
