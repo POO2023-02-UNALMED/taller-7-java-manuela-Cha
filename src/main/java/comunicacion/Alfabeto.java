@@ -29,7 +29,7 @@ public class Alfabeto extends Pictograma {
             frase.append(Alfabeto.letras[i]); 
             frase.append(", ");
         }
-        frase.delete(frase.length()-2, frase.length()-1);
+        frase.delete(frase.length()-2, frase.length());
         return frase.toString();
     }
     
